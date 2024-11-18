@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pink{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    
+   
+}
+.pink img{
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+    transform-origin: top;
+    
+}
+.black{
+    background-color:black;
+    height: 300px;
+    width: 200px;
+    transition: 1s;
+    transform-origin:  left;
+    position: absolute;
+    left: 0px;
+    
+}
+.pink:hover .black{
+    transform: perspective(300px) rotatey(30deg);
+    
+}
+.pink:hover .red{
+    transform: perspective(300px) rotatey(-30deg);
+    
+}
+.red{
+    background-color:rgb(240, 103, 103);
+    height: 300px;
+    width: 200px;
+    transition: 1s;
+    transform-origin: center right;
+    position: absolute;
+    right: 0px;
+    
+    
+
+}
+.pink:hover img{
+    transform: scale(1.5);
+}
